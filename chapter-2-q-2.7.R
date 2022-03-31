@@ -1,5 +1,9 @@
 #Use R to plot Cuyamaca January Tmin temps from 1951-2010 with a continuous curve
-dat=read.csv("/Users/ashtonperez/Desktop/MAth Modeling Data Sets/CA042239T.csv",
+
+# Must run Rstudio from a project thats relative to this script
+ds = paste(getwd(), "/csv/CA042239T.csv", sep="")
+
+dat=read.csv(ds,
              header=FALSE)
 dim(dat) #gives the rows x columns
 dat[1:3,] 
