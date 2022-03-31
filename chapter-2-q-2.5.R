@@ -1,8 +1,11 @@
 #use R to arrange the months Cuyamaca Tmax from Januarly to 1961 to December 1990 as 
 # matrix with each row as year and each column as month
 
+# Must run Rstudio from a project thats relative to this script
+ds = paste(getwd(), "/csv/CA042239T.csv", sep="")
+
 #Max Temperature
-dat=read.csv("/Users/ashtonperez/Desktop/MAth Modeling Data Sets/CA042239T.csv",
+dat=read.csv(ds,
              header=TRUE)
 
 
